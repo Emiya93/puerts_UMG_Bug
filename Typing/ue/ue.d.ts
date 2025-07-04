@@ -39981,6 +39981,19 @@ declare module "ue" {
         
     }
 
+    namespace Engine.Tutorial.SubEditors.TutorialAssets.TutorialAnimationBlueprint {
+        class AnimBlueprintGeneratedMutableData extends UE.AnimBlueprintMutableData {
+            constructor();
+            /**
+             * @deprecated use StaticStruct instead.
+             */
+            static StaticClass(): ScriptStruct;
+            static StaticStruct(): ScriptStruct;
+            __tid_AnimBlueprintGeneratedMutableData_0__: boolean;
+        }
+        
+    }
+
     class AnimBlueprintGeneratedStruct extends UE.ScriptStruct {
         constructor(Outer?: Object, Name?: string, ObjectFlags?: number);
         static StaticClass(): Class;
@@ -105873,11 +105886,11 @@ declare module "ue" {
     enum ENiagaraCompileErrorSeverity { Ignore, LogOnly, Warning, Error, ENiagaraCompileErrorSeverity_MAX, __typeKeyDoNoAccess}
     enum ENiagaraCompileUsageStaticSwitch { Spawn, Update, Event, SimulationStage, Default, ENiagaraCompileUsageStaticSwitch_MAX, __typeKeyDoNoAccess}
     enum ENiagaraConditionalOperator { Equals, NotEqual, LessThan, LessThanOrEqual, GreaterThan, GreaterThanOrEqual, Max, ENiagaraConditionalOperator_MAX, __typeKeyDoNoAccess}
-    enum ENiagaraCoordinateSpace { Simulation, World, Local, ENiagaraCoordinateSpace_MAX, __typeKeyDoNoAccess}
     namespace Niagara.Enums.ENiagaraCoordinateSpace {
         enum ENiagaraCoordinateSpace { Simulation, World, Local, ENiagaraCoordinateSpace_MAX, __typeKeyDoNoAccess}
     }
 
+    enum ENiagaraCoordinateSpace { Simulation, World, Local, ENiagaraCoordinateSpace_MAX, __typeKeyDoNoAccess}
     namespace Niagara.Enums.ENiagaraCurlNoiseQuality {
         enum ENiagaraCurlNoiseQuality { "Baked (Low)", "Baked (Medium)", "Baked (High)", "Evaluated (Ultra)", ENiagaraCurlNoiseQuality_MAX, __typeKeyDoNoAccess}
     }
@@ -106027,11 +106040,11 @@ declare module "ue" {
         enum ENiagaraNumericVariableTypes { Float, "Vector 2D", "Vector 3D", "Vector 4D", "Linear Color", Quaternion, Position, ENiagaraNumericVariableTypes_MAX, __typeKeyDoNoAccess}
     }
 
+    enum ENiagaraOrientationAxis { XAxis, YAxis, ZAxis, ENiagaraOrientationAxis_MAX, __typeKeyDoNoAccess}
     namespace Niagara.Enums.ENiagaraOrientationAxis {
         enum ENiagaraOrientationAxis { "X Axis", "Y Axis", "Z Axis", ENiagaraOrientationAxis_MAX, __typeKeyDoNoAccess}
     }
 
-    enum ENiagaraOrientationAxis { XAxis, YAxis, ZAxis, ENiagaraOrientationAxis_MAX, __typeKeyDoNoAccess}
     enum ENiagaraOutlinerSortMode { Auto, FilterMatches, AverageTime, MaxTime, ENiagaraOutlinerSortMode_MAX, __typeKeyDoNoAccess}
     enum ENiagaraOutlinerTimeUnits { Microseconds, Milliseconds, Seconds, ENiagaraOutlinerTimeUnits_MAX, __typeKeyDoNoAccess}
     enum ENiagaraOutlinerViewModes { State, Performance, Debug, ENiagaraOutlinerViewModes_MAX, __typeKeyDoNoAccess}

@@ -97,24 +97,6 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: C9B8A43E442C8D87E5B77BB284D93163
-    namespace Game.StarterContent.TestStruct {
-        class TestStruct {
-            constructor();
-            constructor(speed: number, age: number);
-            speed: number;
-            age: number;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_TestStruct_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
 // __TYPE_DECL_START: 2620B05B4D570B271A8AAF934441D4E7
     namespace Game.StarterContent.TestWidgetBlueprint {
         class TestWidgetBlueprint_C extends UE.UserWidget {
@@ -131,7 +113,7 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: F3D240FC426D7E3DD961D9905E06E086
+// __TYPE_DECL_START: F3CC49B8478494996A6C888856422091
     namespace Game.UMG_Main {
         class UMG_Main_C extends UE.UserWidget {
             constructor(Outer?: Object, Name?: string, ObjectFlags?: number);
@@ -139,7 +121,7 @@ declare module "ue" {
             Button_27: UE.Button;
             BndEvt__UMG_Main_Button_27_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature() : void;
             ExecuteUbergraph_UMG_Main(EntryPoint: number) : void;
-            TestUI() : void;
+            Test() : void;
             static StaticClass(): Class;
             static Find(OrigInName: string, Outer?: Object): UMG_Main_C;
             static Load(InName: string): UMG_Main_C;
@@ -181,6 +163,24 @@ declare module "ue" {
             static Load(InName: string): UMGTest_C;
         
             __tid_UMGTest_C_0__: boolean;
+        }
+        
+    }
+
+// __TYPE_DECL_END
+// __TYPE_DECL_START: 8A8AABE04FC7B9DAF12BB599D89C53B8
+    namespace Game.StarterContent.TestStruct {
+        class TestStruct {
+            constructor();
+            constructor(speed: number, age: number);
+            speed: number;
+            age: number;
+            /**
+             * @deprecated use StaticStruct instead.
+             */
+            static StaticClass(): ScriptStruct;
+            static StaticStruct(): ScriptStruct;
+            __tid_TestStruct_0__: boolean;
         }
         
     }

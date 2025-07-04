@@ -14,7 +14,7 @@ interface MainMixin extends UE.Game.UMG_Main.UMG_Main_C {}
 
 class MainMixin 
 {
-    TestUI() : void{
+    Test() : void{
         console.warn("TestUI called from TypeScript mixin");
         const UMGTestClass = UE.Class.Load('/Game/UMGTest.UMGTest_C');
         const TS_UMGTestClass = blueprint.tojs<typeof UE.Game.UMGTest.UMGTest_C>(UMGTestClass);

@@ -9,7 +9,7 @@ let GameInstance = puerts_1.argv.getByName("GameInstance");
 const MainClass = UE.Class.Load('/Game/UMG_Main.UMG_Main_C');
 const TS_MainClass = puerts_1.blueprint.tojs(MainClass);
 class MainMixin {
-    TestUI() {
+    Test() {
         console.warn("TestUI called from TypeScript mixin");
         const UMGTestClass = UE.Class.Load('/Game/UMGTest.UMGTest_C');
         const TS_UMGTestClass = puerts_1.blueprint.tojs(UMGTestClass);
