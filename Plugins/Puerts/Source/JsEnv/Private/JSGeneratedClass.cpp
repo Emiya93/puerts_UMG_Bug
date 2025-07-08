@@ -199,6 +199,7 @@ UFunction* UJSGeneratedClass::Mixin(v8::Isolate* Isolate, UClass* Class, UFuncti
         Class->AddFunctionToFunctionMap(Tmp, Tmp->GetFName());
         Tmp->SetFlags(Tmp->GetFlags() | RF_Transient);
         Super = Tmp;
+        Super->ClearInternalFlags(EInternalObjectFlags::Native);
     }
     auto MaybeJSFunction = Cast<UJSGeneratedFunction>(Super);
     if (!MaybeJSFunction)
